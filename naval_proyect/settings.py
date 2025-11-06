@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'widget_tweaks',
     'naval_app',
-    'account_app'
+    'account_app',
 ]
 
 MIDDLEWARE = [
@@ -125,5 +125,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'account_app.profile'
 LOGIN_URL="/account_app/login"
-LOGIN_REDIRECT_URL="/naval_app/buque_list"
+LOGIN_REDIRECT_URL="/buques"
+LOGOUT_REDIRECT_URL = "index"   # o "index" si preferís volver al inicio
 

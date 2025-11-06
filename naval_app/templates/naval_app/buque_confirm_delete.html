@@ -1,0 +1,14 @@
+{% extends 'naval_app/index.html' %}
+
+{% block contenido %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">¿Eliminar Buque?</h2>
+    <p class="text-center">Estás a punto de eliminar el buque <strong>{{ buque.nombre }}</strong> (IMO: {{ buque.imo }}).</p>
+    
+    <form method="POST" class="text-center">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+        <a href="{% url 'buque_list' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
