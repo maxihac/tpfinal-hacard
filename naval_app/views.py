@@ -47,3 +47,6 @@ def borrar_buque(request, pk):
         return redirect("buque_list")
     
     return render(request, "naval_app/buque_confirm_delete.html", {"buque": buque})
+
+def about(request):
+    return render(request, 'naval_app/about.html')

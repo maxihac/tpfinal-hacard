@@ -38,6 +38,7 @@
                         <li class="nav-item"><a class="nav-link" href="{% url 'buque_list' %}">Buques</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Planos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Empresas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
                         <li class="nav-item">
                             <form action="{% url 'logout' %}" method="post" class="d-inline">
                             {% csrf_token %}
@@ -48,6 +49,7 @@
                             </form>
                         </li>
                     {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
                     {% endif %}
                 </ul>

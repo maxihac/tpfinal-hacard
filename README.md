@@ -1,1 +1,2 @@
 # naval2025
+Este es parte de mi proyecto final, por falta de tiempo aun no lo he terminado y faltan algunos puntos de la consigna que estoy desarrollando, debido a temas laborales y que proximamente me voy de viaje, estimo que aproximadamente el 25-11 estara mas completo, de igual manera, dejo el link con el video de lo desarrollado hasta ahora https://drive.google.com/file/d/117v76v94LHpN2NLpKYwZ_If5sic5N4Hy/view?usp=sharing
